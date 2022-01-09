@@ -18,6 +18,11 @@ cargo run
 
 <a title="Gitpod" href="https://gitpod.io/#https://github.com/cti1650/rust_rocket_test" rel="nofollow noreferrer noopener" target="_blank" class="btn btn-primary">Gitpodでサンプルを実行</a>
 
+### 本番リンク
+
+[https://rust-rocket-test-cti-tl.herokuapp.com/](https://rust-rocket-test-cti-tl.herokuapp.com/)
+
+
 ```
 #![feature(proc_macro_hygiene)]
 #![feature(decl_macro)]
@@ -37,6 +42,30 @@ fn main() {
         .launch();
 }
 ```
+
+## heroku
+
+### デプロイ時につまづいたこと
+
+- ローカルでは問題なく起動できるのに heroku ではうまく動作しなかった
+
+#### RustConfigを忘れるとデプロイに失敗する
+
+RustConfig
+
+```
+VERSION=nightly
+```
+
+#### デプロイが成功してもProcfileへのapp nameの指定が誤っていると正常に動作しない
+
+Cargo.tomlで指定したnameをProcfileに記入が必要
+
+Procfile
+```text
+web: ROCKET_PORT=$PORT ./target/release/{{app name}}
+```
+
 
 ## 参考にしたサイト
 
