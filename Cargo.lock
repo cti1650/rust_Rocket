@@ -739,6 +739,7 @@ name = "rocket-webapi"
 version = "0.1.0"
 dependencies = [
  "rocket",
+ "rocket_codegen",
  "rocket_contrib",
  "serde",
  "serde_json",
