@@ -42,3 +42,6 @@ fn main() {
 
 - [Rust Rocket,Dieselを使用した簡単なGET,POST](https://zenn.dev/sgtkuc1118/articles/4571d7960dfbfc)
 
+- [RustのWebアプリ(Rocket)をHerokuにデプロイする - Qiita](https://qiita.com/ovrmrw/items/b316f01f4a936fec9b85)
+
+- [【Heroku】Herokuで環境変数を設定する方法 - Qiita](https://qiita.com/mzmz__02/items/64db94b8fc67ee0a9068)
