@@ -1,5 +1,5 @@
 # rust_rocket_test
-  
+
 ## Rocket
 
 ### 初期設定
