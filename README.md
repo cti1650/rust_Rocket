@@ -39,3 +39,6 @@ fn main() {
 ## 参考にしたサイト
 
 - [Rust RocketでのWebAPIサーバーの書き方を解説してみる - Qiita](https://qiita.com/yukinarit/items/c5128e67d168b4f39983)
+
+- [Rust Rocket,Dieselを使用した簡単なGET,POST](https://zenn.dev/sgtkuc1118/articles/4571d7960dfbfc)
+
