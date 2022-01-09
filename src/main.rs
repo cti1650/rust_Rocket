@@ -4,14 +4,14 @@
 #[macro_use]
 extern crate rocket;
 
-/// GETがきたときに"Hello, world!"というレスポンスを返す
-#[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
-}
+mod models;
+mod routes;
+
+// WebAPIのURLルーティングはroutes.rsに移動する
+use routes::*;
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![index])  // ここにルーティングをセットする
+        .mount("/", routes![index, sampleword])  // ここにルーティングをセットする
         .launch();
 }
